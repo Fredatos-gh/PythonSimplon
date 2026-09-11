@@ -1,9 +1,9 @@
 # Qu'est-ce que c'est ?
 
-Ceci est un projet de visualisation de données, qui utilise le langage de programmation Pyhton.
+Ceci est un projet de visualisation de données, qui utilise le langage de programmation Python.
 Il utilise deux outils : [pandas](https://pandas.pydata.org/about/) et [plotly](https://plotly.com/python/).
 
-- Pandas va nous permettre de télécharger un fichier de données CSV depuis une URL et de réaliser des analyses exploratoires.
+- Pandas va nous permettre de télécharger un fichier de données CSV depuis une URL et de réaliser des analyses exploratoires. Si l'URL n'est pas accessible, une copie locale du fichier CSV est utilisée.
 - Plotly va nous permettre de générer des graphiques puis de les exporter en page web (au format HTML).
 
 # Démarrer le projet dans GitHub Codespaces
