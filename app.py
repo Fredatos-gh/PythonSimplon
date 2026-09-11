@@ -12,7 +12,7 @@ FICHIER_SORTIE = 'ventes-par-region.html'
 def charger_donnees():
     try:
         return pd.read_csv(DONNEES_URL)
-    except URLError:
+    except (OSError, URLError):
         return pd.read_csv(DONNEES_LOCALES)
 
 
