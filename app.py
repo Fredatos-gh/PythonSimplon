@@ -1,5 +1,5 @@
 from pathlib import Path
-from urllib.error import URLError
+from urllib.error import HTTPError, URLError
 
 import pandas as pd
 import plotly.express as px
@@ -12,7 +12,7 @@ FICHIER_SORTIE = 'ventes-par-region.html'
 def charger_donnees():
     try:
         return pd.read_csv(DONNEES_URL)
-    except (OSError, URLError):
+    except (HTTPError, OSError, URLError):
         return pd.read_csv(DONNEES_LOCALES)
 
 
